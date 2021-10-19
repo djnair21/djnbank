@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_menu{
+background-color: var(--main-bg);
+}
+.navbar{
+    color:white;
+    background-color: var(--main-bg);
+    padding: 2rem 0rem;
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a{
+    color: white;
+    font-size: 1.8rem;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar-toggler-icon{
+    background-color: rgb(6, 27, 99);
+}
+
+.main_header_left{
+    height:50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left p{
+font-size: 2.5rem;
+}
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+.main_header_left .txtColor{
+    color: var(--main-color);
+}
+.main_header_left button{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px black;
+    outline: none;
+}
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color) ;
+}
+.main_header_right{
+    height:50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--main-bg);
+    margin: top auto;
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    line-height: 5rem;
+    font-size: 1.4rem;
+}
+
+.container{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.tablestyle {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.5em;
+    font-family: sans-serif;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.tablestyle thead tr {
+    background-color: #373a53;
+    color: #ffffff;
+    text-align: center;
+}
+
+.tablestyle th,
+.tablestyle td {
+    padding: 12px 15px;
+}
+.tablestyle tbody tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+}
+
+.tablestyle tbody tr:hover {
+    background-color: #d3d0df;
+}
+.tablestyle tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+.tablestyle tbody tr:nth-of-type(even):hover {
+    background-color: #d3d0df;
+}
+
+.tablestyle tbody tr:last-of-type {
+    border-bottom: 2px solid #356de7;
+}
+.btncolor{
+    background-color:#393a44;
+    color:beige;
+    width: 80%;
+}
+.btncolor:hover{
+    background-color:#fafbff;
+    color:rgb(0, 0, 0);
+}
+
+.select { 
+    display: inline;
+    width: 100%;
+    height: 3em;
+    font-size: 1.5em;
+    border-radius: .5em;
+    
+      
+}
+
+.main_head_left{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_head_right{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.transbutton{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.forminput{
+    width: 100%;
+    height: 3em;
+    font-size: 1.5em;
+    border-radius: .25em;
+}
+
+.transbutton .transbut{
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px black;
+    outline: none; 
+}
+.transbutton .transbut:hover{
+    box-shadow: 0 8px 6px -6px var(--main-color) ;
+}
+
+@media(max-width: 768px){
+    .main_header_left{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        margin-top: 30px;
+        padding-top: 5rem;
+        text-align: center;
+    }
+    
+    .main_header_right{
+        height: auto;
+        margin:5rem 0;
+        padding-top: 2rem;
+    }
+   .btncolor{
+       width: auto;
+   }
+  .tablestyle{
+      width: auto;
+  }
+}
+
+label{
+    font-size: 1.5rem;
+}
